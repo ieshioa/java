@@ -9,5 +9,19 @@ public class If {
         } else {
             System.out.println("n1이 n2보다 미만값입니다.");
         }
+
+        System.out.println("-------------------");
+
+        n2 = 10;
+
+        if (n1 < n2) {
+            System.out.println("n1이 작다.");
+        } else if (n1 > n2) {
+            System.out.println("n1이 크다.");
+        } else {
+            System.out.println("n1과 n2가 같다.");
+        }
+
+
     }
 }
