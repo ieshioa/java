@@ -28,7 +28,7 @@ public class MissionIf3_1 {
         if ("남".equals(gender)) {
             standHeight = 175 ;
             System.out.print("남자");
-        } else if ("여".equals(gender)) {
+        } else {
             System.out.print("여자");
         }
 
