@@ -36,6 +36,8 @@ public class MissionIf3 {
         }
         System.out.println("---------");
 
+         // 코드 중복 줄이기
+
         int standHeight = 161;
 
         if ("남".equals(gender)) {
