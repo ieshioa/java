@@ -1,4 +1,4 @@
-package com.green.day2;
+package com.green.day2_0315;
 
 public class RandomValue {
     public static void main(String[] args) {

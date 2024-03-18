@@ -1,4 +1,4 @@
-package com.green.day3;
+package com.green.day3_0318;
 
 import java.util.Scanner;
 

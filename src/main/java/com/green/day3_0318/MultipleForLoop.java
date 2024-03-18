@@ -1,4 +1,4 @@
-package com.green.day3;
+package com.green.day3_0318;
 
 public class MultipleForLoop {
     // 이중 for문, 중첩 for문

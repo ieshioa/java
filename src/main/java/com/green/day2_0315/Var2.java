@@ -1,4 +1,4 @@
-package com.green.day2;
+package com.green.day2_0315;
 
 public class Var2 {
     int gNum; // 전역변수

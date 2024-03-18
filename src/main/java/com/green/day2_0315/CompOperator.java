@@ -1,4 +1,4 @@
-package com.green.day2;
+package com.green.day2_0315;
 
 //비교연산자
 public class CompOperator {

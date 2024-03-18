@@ -1,4 +1,4 @@
-package com.green.day1;
+package com.green.day1_0314;
 
 public class Memo {
     public static void main(String[] args){
