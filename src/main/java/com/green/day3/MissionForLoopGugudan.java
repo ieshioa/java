@@ -5,9 +5,10 @@ public class MissionForLoopGugudan {
         // 2 ~ 9단 랜덤하게
         int dan = (int)(Math.random() * 8) + 2;
         System.out.println(dan + "단");
-        for(int i=0; i<9; i++) {
-            int num = i + 1;
-            System.out.println(dan + " X " + num + " = " + (dan * num));
+        for(int i=1; i<10; i++) {
+          //  System.out.println(dan + " X " + i + " = " + (dan * i));
+            System.out.printf("%d X %d = %d\n", dan, i, (dan*i));
         }
+
     }
 }

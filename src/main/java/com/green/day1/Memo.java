@@ -16,6 +16,7 @@ main : 메소드명
 int : 데이터타입
 %: mod
 new: 객체화(실체화) 시킨다
+crud(Creat Read Update Delete)
 
 [객체와 클래스]
     객체 아파트
@@ -24,7 +25,7 @@ new: 객체화(실체화) 시킨다
 
 [객체 구성요소]
     속성(명사), 메소드(동사)
-    System.out.println;  out:속성 println:메소드
+    System.out.println();  out:속성 println:메소드
 
 [단축키]
     ctrl + / : 여러줄 한번에 주석
