@@ -13,23 +13,38 @@ public class MissionGrade {
          */
 
         int score = (int)(Math.random() * 101);
-        char grade = ' ';
 
         System.out.println("점수: " + score);
         System.out.print("당신의 학점은 ");
 
+        char grade = 'F';
         if (score >= 90) {
             grade = 'A';
         } else if (score >= 80){
             grade = 'B';
         } else if (score >= 70) {
-            grade = 'c';
-        } else {
-            grade = 'F';
+            grade = 'C';
         }
 
         System.out.println(grade + " 입니다.");
         System.out.printf("%c 입니다", grade);
+        System.out.println();
+
+        String g = "F";
+
+        switch (score/10) {
+            case 10:
+            case 9:
+                g = "A";
+                break;
+            case 8:
+                g = "B";
+                break;
+            case 7:
+                g = "C";
+                break;
+        }
+        System.out.println(g + " 입니다.");
 
     }
 }
