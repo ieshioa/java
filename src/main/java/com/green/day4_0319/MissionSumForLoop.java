@@ -11,8 +11,8 @@ public class MissionSumForLoop {
         for (int i=0; i<=end; i++) {
             sum += i;
         }
+        System.out.println(sum); // 1~ end 까지 더한 값
 
-        System.out.println(sum);
 
     }
 }
