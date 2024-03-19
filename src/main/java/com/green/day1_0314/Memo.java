@@ -40,14 +40,18 @@ crud(Creat Read Update Delete)
             예약어 안됨 (파란글씨)
     전역변수: 초기화 안해도 됨, 디폴트값이 있음
     지역변수: 무조건 초기화 필수
+    final int NUM = 10;
+    변수를 변경할 수 없음
+    대문자로 씀
 
 [데이터타입]
-    (Primitive Type)
+    (Primitive Type - 리터럴값이 저장됨)
     정수형: int(4B), long(8B), byte(1B), short(2B)
     실수형: double, float
     불린형: boolean (true, false 값만 가질 수 있는 데이터타입)
     문자형: char
-    (Referance Type 무한대, 대문자 ex) String)
+    (Referance Type - 개수 무한대, 대문자, 객체의 주소값이 저장됨 ex) String() )
+    == 비교는 주소값 비교, equals 비교는 값비교
 
 [형변환]
     타입이 안맞으면 맞게 타입 변화를 줘야한다.
@@ -75,7 +79,7 @@ crud(Creat Read Update Delete)
     %d      10진 정수 형식
     %o      8진 정수 형식
     %x %X   16진 정수 형식
-    %f      부동 소수점 형식
+    %f      부동 소수점 형식(실수타입)
     %e %E   지수 표현식
     %c      문자
     %s      문자열
@@ -96,6 +100,15 @@ crud(Creat Read Update Delete)
         반복코드
         }
     <while>
+        진입하기 전에 조건식 체크하고 true면 반복문 실행
     <do-while>
+        반복문 먼저 실행하고 조건식 체크
+        false여도 처음 한번은 실행함
+
+[Scope 스코프]
+    개념은 모든 언어가 동일
+    변수가 선언이 되면 그 변수를 감싸고 있는 중괄호가 있다.
+    그 중괄호를 벗어나면 죽는다.
+    전역변수는 예외
 
  */

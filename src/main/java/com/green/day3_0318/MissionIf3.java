@@ -9,11 +9,14 @@ public class MissionIf3 {
         String gender = scan.nextLine();
         System.out.print("당신의 키를 입력해주세요. >> ");
         int height = scan.nextInt();
+/*
+    <조건>
+    남자 175 여자 161
+    남, 기준값175
+    여 기준값161
+    남/여 아니면 성별을 입력해주세요.
+ */
 
-        //남자 175 여자 161
-        // 남, 기준값175
-        // 여 기준값161
-        // 남/여 아니면 성별을 입력해주세요.
         System.out.println("---------");
         if ("남".equals(gender)){
             if (height > 175) {

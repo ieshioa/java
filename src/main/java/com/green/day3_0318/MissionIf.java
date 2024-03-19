@@ -10,10 +10,13 @@ public class MissionIf {
 //        System.out.println(gender);
 //        System.out.println("-끝-");
 //
-        //지금까지 배운걸로
-        // 남을 입력했을떄 당신은 남자입니다
-        // 여를 입력했을때 당신은 여자입니다
-        // 남/여 외에 다른게 입력되면 성별을 입력해주세요
+/*
+    <조건>
+    지금까지 배운걸로
+    남을 입력했을떄 당신은 남자입니다
+    여를 입력했을때 당신은 여자입니다
+    남/여 외에 다른게 입력되면 성별을 입력해주세요
+ */
 
         System.out.print("성별을 입력해주세요. (남/여) >> ");
         String gender = scan.nextLine();
