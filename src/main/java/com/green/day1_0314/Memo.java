@@ -29,7 +29,8 @@ crud(Creat Read Update Delete)
 
 [단축키]
     ctrl + / : 여러줄 한번에 주석
-    ctrl+d : 줄복사
+    ctrl + d : 줄복사
+    alt + shift + : 줄 이동
     sout : System.out.println();
     psvm : public static void main(String[] args) {}
 
@@ -41,8 +42,8 @@ crud(Creat Read Update Delete)
     전역변수: 초기화 안해도 됨, 디폴트값이 있음
     지역변수: 무조건 초기화 필수
     final int NUM = 10;
-    변수를 변경할 수 없음
-    대문자로 씀
+        변수를 변경할 수 없음
+        대문자로 씀
 
 [데이터타입]
     (Primitive Type - 리터럴값이 저장됨)
@@ -50,7 +51,7 @@ crud(Creat Read Update Delete)
     실수형: double, float
     불린형: boolean (true, false 값만 가질 수 있는 데이터타입)
     문자형: char
-    (Referance Type - 개수 무한대, 대문자, 객체의 주소값이 저장됨 ex) String() )
+    (Referance Type - 개수 무한대, 대문자, 객체의 주소값이 저장됨 ex) String )
     == 비교는 주소값 비교, equals 비교는 값비교
 
 [형변환]
@@ -111,4 +112,16 @@ crud(Creat Read Update Delete)
     그 중괄호를 벗어나면 죽는다.
     전역변수는 예외
 
+[논리 연산자]
+    and : 모두 true 일 때 true
+    or : 하나라도 true 일 때 true
+    not : toggle처리에 사용 (스위치, on/off)
+    && : false면 끝까지 연산하지 않고 끝냄
+    & : 비트연산자, false가 나와도 끝까지 연산을 다 함 > cpu 잡아먹음
+
+[continue, break]
+    continue
+        skip의 의미
+    break
+        stop의 의미
  */
