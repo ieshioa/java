@@ -7,6 +7,8 @@ public class MissionABS {
         int val = (int)(Math.random() * 21) - 10;  // 0 ~ 20 > -10 ~ 10
         System.out.println(val);
 
+        //  Mate.abs();  // 절댓값 구하는 메소드
+
         if (val < 0) {
             val *= -1;  // 원본값은 안건드는게 좋음 > 새로운 변수를 지정
         }

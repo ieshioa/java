@@ -18,6 +18,15 @@ public class MissionSumEvenForLoop {
         }
         System.out.println(sum);
 
+        int sum2 = 0;
+        for (int i=0; i<=end; i+=2) {
+            if((i % 2) == 0) {
+                sum2 += i;
+            }
+        }
+        System.out.println(sum2);
+
+
 
     }
 }

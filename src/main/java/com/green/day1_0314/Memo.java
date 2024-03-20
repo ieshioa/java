@@ -4,28 +4,17 @@ public class Memo {
     public static void main(String[] args){
         System.out.print("Hello!\n");
     }
+    // 메인 메소드 - 없으면 실행을 못함
 
 }
 
 /*
 
 "" : 문자열, String
-void : 리턴타입
-main : 메소드명
-() : 매개변수
 int : 데이터타입
 %: mod
 new: 객체화(실체화) 시킨다
 crud(Creat Read Update Delete)
-
-[객체와 클래스]
-    객체 아파트
-    클래스 설계도
-    클래스를 가지고 객체를 만든다
-
-[객체 구성요소]
-    속성(명사), 메소드(동사)
-    System.out.println();  out:속성 println:메소드
 
 [단축키]
     ctrl + / : 여러줄 한번에 주석
@@ -33,6 +22,26 @@ crud(Creat Read Update Delete)
     alt + shift + : 줄 이동
     sout : System.out.println();
     psvm : public static void main(String[] args) {}
+
+[메소드의 구성요소]
+    void : 리턴타입
+    main : 메소드명
+    () : 매개변수, 파라미터
+
+[객체와 클래스]
+    객체 : 아파트
+    클래스 : 설계도
+    클래스를 가지고 객체를 만든다
+
+[객체 구성요소]
+    속성(명사), 메소드(동사)
+    System.out.println();  out:속성 println:메소드
+
+[Scope 스코프]
+    개념은 모든 언어가 동일
+    변수가 선언이 되면 그 변수를 감싸고 있는 중괄호가 있다.
+    그 중괄호를 벗어나면 죽는다.
+    전역변수는 예외
 
 [변수]
     static : 객체와 상관 없음
@@ -58,6 +67,16 @@ crud(Creat Read Update Delete)
     타입이 안맞으면 맞게 타입 변화를 줘야한다.
     자동형변환, 강제형변환
 
+[null]
+    주소값이 없다는 뜻
+    primitive 타입은 null 가질 수 없다.
+    reference 타입은 객체의 주소값을 저장할 수 있다.
+    객체의 주소값만 저장 가능 ( 그리고 이것은 객체를 가리키고 있다고 표현)
+
+[자바 메소드]
+    Math.random();  // 랜덤변수
+    Math.abs();  //  절댓값
+
 [랜덤변수]
     Math.random()  // 0.00000 ~ 0.9999, 리턴값 더블
     Math.random() * 10  // 0 ~ 9
@@ -65,9 +84,6 @@ crud(Creat Read Update Delete)
     (원하는 최댓값 +1만큼 곱해줌)
     int num = (int)(Math.random() * 10) + 1;   // 1 ~ 10
 
-[삼항식]
-    조건식
-    식 ? true일 때 : false일 때;
 
 [문자열 비교]
     자바에서 문자열 비교는 equals로 해야한다.
@@ -106,22 +122,26 @@ crud(Creat Read Update Delete)
         반복문 먼저 실행하고 조건식 체크
         false여도 처음 한번은 실행함
 
-[Scope 스코프]
-    개념은 모든 언어가 동일
-    변수가 선언이 되면 그 변수를 감싸고 있는 중괄호가 있다.
-    그 중괄호를 벗어나면 죽는다.
-    전역변수는 예외
-
-[논리 연산자]
-    and : 모두 true 일 때 true
-    or : 하나라도 true 일 때 true
-    not : toggle처리에 사용 (스위치, on/off)
-    && : false면 끝까지 연산하지 않고 끝냄
-    & : 비트연산자, false가 나와도 끝까지 연산을 다 함 > cpu 잡아먹음
-
 [continue, break]
     continue
         skip의 의미
     break
         stop의 의미
+
+[논리 연산자]
+    and : 모두 true 일 때 true
+    or : 하나라도 true 일 때 true
+    not : toggle처리에 사용 (스위치, on/off, 좋아요)
+    && : 논리연산자, false면 끝까지 연산하지 않고 끝냄
+    & : 비트연산자, false가 나와도 끝까지 연산을 다 함 > cpu 잡아먹음
+
+[삼항식]
+    조건식
+    식 ? true일 때 : false일 때;
+
+
+
+
+[]
+
  */
