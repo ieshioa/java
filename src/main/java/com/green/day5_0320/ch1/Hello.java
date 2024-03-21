@@ -8,3 +8,4 @@ public class Hello {  // public을 붙이면 클래스명이 무조건 파일명
 
     }
 }
+

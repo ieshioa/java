@@ -4,6 +4,7 @@ import java.io.PrintStream;
 
 public class Naming {
     public static void main(String[] args){
+        int x = 10;  // 리터럴 = 10;
         /*
         네이밍 규칙
         1. 변수, 메소드 명명규칙
