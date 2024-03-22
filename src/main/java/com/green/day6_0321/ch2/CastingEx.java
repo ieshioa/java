@@ -17,9 +17,9 @@ public class CastingEx {
         //
 
         long l1 = 100000000L;
-        float f1 = l1;
+        float f1 = l1;  // 정확도를 조금 줄이고 범위를 넓힘
         System.out.println("f1: " + f1);
-        long l2 = (long)f1;
+        long l2 = (long)f1;  // 값을 잃어서 자동으로 바뀌지 않음
         System.out.println("l2: " + l2);
     }
 }

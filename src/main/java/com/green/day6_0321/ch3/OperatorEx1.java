@@ -4,7 +4,7 @@ public class OperatorEx1 {
     public static void main(String[] args) {
         int n1 = 3, n2 = 5;
 
-        //int r1 = -n1-n2;
+        //int r1 = -n1-n2;      // 가독성 안좋음
         int r1 = (-n1) - n2;  // 가독성 좋게
         System.out.println("r1: " + r1);
 

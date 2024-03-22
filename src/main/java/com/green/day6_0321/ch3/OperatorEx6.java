@@ -13,8 +13,8 @@ public class OperatorEx6 {
         int d = 1_000_000;  // _ 없는거나 마찬가지. 그냥 보기 편하라고 넣는거임
         System.out.println(d);
 
-        long e = 1_000_000 * 1_000_000;
-        long f = 1_000_000 * 1_000_000L;
+        long e = 1_000_000 * 1_000_000;  // 오버플로우 발생  int * int = int , 인트가 감당을 못해서 오버플로우
+        long f = 1_000_000 * 1_000_000L;  // L 붙여주면 롱타입이 됨. 형변환되어서 long * long이 됨
 
         System.out.println("e: " + e);  // int의 결과가 long타입으로 바뀜, 오버플로우
         System.out.println("f: " + f);   // long * long = long > 오버플로우 발생 x

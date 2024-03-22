@@ -90,4 +90,13 @@ public class MemoValue {
         > String, primitive type 일 때 사용하는 편
         > e.g. LAST_INDEX_OF, STRING_BUFFER
 
+[long과 float 초기화]
+    변수를 선언하고 초기화 할 때 long타입은 리터럴 뒤에 l혹은 L,
+    float 타입은 f 혹은 F를 붙여야 한다.
+    why? long num = 9876543210;
+        을 입력했다고 했을 때, 리터럴 9876543210은 num에 저장되기 전에
+        임시로 int 타입으로 저장이 되는데 이때 int 범위를 초과해서 오류가 난다.
+        뒤에 l 혹은 L을 붙여주면 이것을 방지할 수 있다.
+        (float의 경우에는 double타입으로 임시로 저장함)
+
  */

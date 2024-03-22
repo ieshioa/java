@@ -46,5 +46,8 @@ public class MemoHello {
 [객체 구성요소]
     속성(명사), 메소드(동사)
     System.out.println();  out:속성 println:메소드
+    객체에 들어있는 값을 알려면 메소드를 이용해야한다(?)
+    객첸,ㄴ 멤버필드를 숨긴다(?)
+    apaqjvlfwm, vmfkvjxl
 
  */
