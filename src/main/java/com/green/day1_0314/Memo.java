@@ -31,6 +31,24 @@ public class Memo {
     %c      문자
     %s      문자열
 
+
+String.valueOf -> ?
+
+String str = "1234";
+
+String to char
+    char sTOc = str.charAt(3);  // sTOc = '4'
+String to int
+    int sTOi = Integer.parseInt(str);  // sTOi = 1234
+char to int
+    int cTOi = Character.getNumericValue(sTOc);  // cTOi = 4
+
+int num = 12
+System.out.printf("%5d\n", num);    // ___12  > 5칸 범위에서 오른쪽에 맞춤
+System.out.printf("%-5d\n", num);   // 12___ > 왼쪽에 맞춤
+System.out.printf("%05d\n", num);   // 00012 > 빈칸에 0을 채움
+
+
 [scan]
     import java.util.Scanner;  // Scanner 클래스를 사용하기 위해 추가함
                                 // (패키지안, 클래스밖)
