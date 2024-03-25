@@ -26,6 +26,7 @@ public class FlowEx4 {
             scoreStr = scan.nextLine();
             score = Integer.parseInt(scoreStr);
         }
+        scan.close();  // 사용하고나면 반납해줘야한다. 지금은 짧기때문에 안해줘도 되지만 하는게 맞다
 
         String grade = switch (score / 10) {
             case 10,9 -> "A";
