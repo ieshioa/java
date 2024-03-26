@@ -1,4 +1,4 @@
-package com.green.example.ch1;
+package com.green.example.ch2;
 
 public class StringEx {
     public static void main(String[] args) {
