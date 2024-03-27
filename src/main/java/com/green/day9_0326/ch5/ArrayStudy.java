@@ -15,18 +15,18 @@ public class ArrayStudy {
             i는 0번부터 시작된다.
             마지막 인덱스 값은 배열의 크기 -1 이다.
             for문이랑 궁합이 좋다
-
          */
 
         int[] numArr2 = {10, 20, 30, 40, 50};
         int[] numArr3 = new int[] {10, 20, 30};
 
-        // 초기화 하지 않았을 때 디폴트
+        // 초기화 하지 않았을 때 디폴트 (배열에서)
         // 정수 - 0
         // 불린 - false
         // primitive - null
 
         String[] strArr = new String[5];
+
 
         System.out.println(numArr[0]);
         numArr[0] = 11;
@@ -35,8 +35,5 @@ public class ArrayStudy {
         System.out.println(numArr2[1]);
         numArr2[1] = 25;
         System.out.println(numArr2[1]);
-
-
-
     }
 }
