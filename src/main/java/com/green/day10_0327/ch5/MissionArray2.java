@@ -10,12 +10,27 @@ public class MissionArray2 {
             중복 허용
          */
         int[] arr = new int[10];
+        int l = arr.length;
 
-        for (int i=0; i< arr.length;i++){
-            arr[i] = (int)(Math.random() * 21) + 10;
+
+        for (int i = 0; i < l; i++) {
+            int j = 0;
+            int check = 0;
+            int num = 0;
+            while(true) {
+                num = (int)(Math.random() * 10) + 1;
+                if (num == arr[j]) {
+                    continue;
+                } else if (j == l-1){
+                    num = arr[i];
+                    break;
+                } else {
+                    j++;
+                }
+            }
+            arr[i] = num;
         }
         System.out.println(Arrays.toString(arr));
-
  //-------------------------------------------
 //        int[] numArr = new int[10];
 //
