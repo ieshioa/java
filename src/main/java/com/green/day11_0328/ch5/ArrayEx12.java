@@ -23,6 +23,5 @@ public class ArrayEx12 {
         for(String val : names) {       // 주로 읽어올때 사용함, 변경할때는 for문 사용 (배열을 변경할때를 말함)
             System.out.printf("val: %s\n", val);
         }
-
     }
 }

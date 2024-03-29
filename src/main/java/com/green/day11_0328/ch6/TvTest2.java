@@ -7,6 +7,7 @@ public class TvTest2 {
         tv.channel = 10;
 
         Tv tv2 = tv;
+        //shallow copy 얕은복사
         tv2 = new Tv();
 
 

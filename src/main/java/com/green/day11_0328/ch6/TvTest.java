@@ -6,6 +6,7 @@ public class TvTest {
         // 떼버리면 같은 클래스 안에서만 사용할 수 있다.
         // 여기서는 ch6에서만 가능
         Tv tv = new Tv();
+        // 캡슐화 할거임 나중에는
         tv.color = "red";
         tv.channel = 10;
         tv.power = true;

@@ -21,9 +21,16 @@ public class TvTest4 {
         /*
         0번방 tv는 채널 11, 1번 12, 2번 13
          */
+        // 패키지 - 사람의 성같은것
+        // 패키지까지 적어주는것이 풀네임이라고 볼 수 있음
+        // 구분할 수 있도록 함
+        // 그래서 앞에는 중복되지 않는 패키지명(도메인)을 사용함
+
+
         for (int i = 0; i < tvArr.length; i++) {
             tvArr[i].channel=11 + i;
             System.out.println(tvArr[i].channel);
+
         }
 //        int channel = 11;  // 위 문장을 for each로 바꿈
 //        for (Tv tv : tvArr) {
