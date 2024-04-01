@@ -23,6 +23,5 @@ public class OperatingEx6 {
         System.out.println("g: " + g);
         g = 10 / (double)3;  // 둘중 하나라도 더블로 바꾸면 형변환 이후 계산이 되기 때문에 더블형태로 g에 저장됨
         System.out.println("g: " + g);
-
     }
 }

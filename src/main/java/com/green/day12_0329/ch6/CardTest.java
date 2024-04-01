@@ -22,13 +22,15 @@ public class CardTest {
         System.out.println("---------");
         Card c2 = new Card();
         c2.kind = "Spade";
-        c2.number = 4;
+        c2.number = 4;      // static이 안붙은 변수는 그 객체만 변함
         System.out.printf("c2.kind: %s\nc2.number: %d\n", c2.kind, c2.number);
+        System.out.printf("c1.kind: %s\nc1.number: %d\n", c1.kind, c1.number);
+        System.out.println("--------");
         System.out.println(Card.width);
         System.out.println(Card.height);
-
+        // static은 주소값.변수가 아니고 클래스.변수로 사용
         System.out.println("----------");
-        c1.width = 200;
+        c1.width = 200;         // static이 붙으면 c1 c2 다 바뀜
         System.out.println(c1.width);
         System.out.println(c2.width);
         System.out.println(Card.width);

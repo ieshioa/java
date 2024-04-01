@@ -1,6 +1,7 @@
 package com.green.day12_0329.ch6;
 
 public class Variable {
+    // 스태틱은 객체와 하지 않아도 살아있고 인스턴스는 객체화 했을때 살아있음
     int iv;                 // 인스턴스 변수, 전역변수 (Global Variable)
     static int cv;          // 클래스 변수, 스태틱 변수
 
