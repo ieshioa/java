@@ -2,7 +2,7 @@ package com.green.day14_0402.ch6;
 //p.294 매개변수가 있는 생성자 (오버로딩된 생성자), this
 public class CarTest {
     public static void main(String[] args) {
-        Car c1 = new Car("white", "auto", 5);
+        Car c1 = new Car("white", "auto", 5);   // 멤버필드(컬러 기어타입 도어)를 객체화와 동시에 초기화
         c1.color = "white";
         // c1 = Car 객체의 주소값이 들어있음
         // 여기 c1이랑 밑에 this랑 같은 주소값이 들어있음
@@ -22,6 +22,8 @@ public class CarTest {
 
     }
 }
+// 기본생성자와 오버로딩된(파라미터가 있는) 생성자가 있다
+
 
 class Car {
     // 전역변수 쓰는 이유 : 객체가 살아있는 동안 이 값을 유지하기 위해

@@ -3,7 +3,7 @@ package com.green.day14_0402.ch6;
 import java.util.Arrays;
 
 public class MyArrays {
-    static void printArr (int[] arr) {
+    public static void printArr (int[] arr) {
         if (arr.length == 0){
             System.out.println("[]");
             return;
