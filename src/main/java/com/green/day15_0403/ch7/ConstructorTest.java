@@ -24,7 +24,7 @@ class Tiger extends Animal {
 
     }
     Tiger(int age, String name) { // 하나는 부모 주고 하나는 나 가짐
-        super();    // 부모의 생성자 호출 Animal()
+        super();    // 부모의 (기본)생성자 호출 Animal()
         this.name = name;
     }
 }
