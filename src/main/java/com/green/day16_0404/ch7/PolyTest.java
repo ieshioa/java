@@ -21,7 +21,7 @@ public class PolyTest {
 
         // 3. 타입은 알고 있는 메소드만 호출할 수 잇고 실행되는 기준은 객체기준이다.
         ani_1.crying(); // 객체는 Dog다
-        //ani_1.sleep();        // 타입이 도그여야함
+        //ani_1.sleep();        // 객체가 가지고 있는지는 중요하지 않음. 타입이 도그여야함
         Dog dog_4 = (Dog)ani_1; // 다형성
         dog_4.sleep();
         dog_1.sleep();
@@ -35,6 +35,9 @@ public class PolyTest {
         dog_5.sleep();
         BullDog bullDog1 = (BullDog) ani_2;
         bullDog1.sleep();
+
+        // Dog dog_6 = ani_2;  //ani2에 불독이 저장되어있지만 타입은 부모타입이기때문에 안된다
+        Dog dog_6 = (Dog)ani_2;  // 형변환 해줘야함
 
 
     }
@@ -58,6 +61,9 @@ class Dog extends Animal {
 class BullDog extends Dog {
     void crying() {
         System.out.println("불독이 월월");
+    }
+    void sleep() {
+        System.out.println("불독이 잔다.");
     }
 }
 

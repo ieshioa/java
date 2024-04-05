@@ -17,6 +17,8 @@ interface DeepPlayingCard extends PlayingCard {
     String getCardKind();
 }
 
+// 인터페이스는 객체화를 할 수 없다
+
 // extends 얘는 무조건 클래스 상속받을 떄만
 // 인터페이스 상속받을 떄는 implements
 
@@ -36,6 +38,7 @@ class PlayCard implements DeepPlayingCard {
 class PlayCardTest {
     public static void main(String[] args) {
         PlayingCard pc = new PlayCard();
+        // 타입의 역할 : 1. 주소값을 담는다 2. 알고있는 메소드를 호출한다
         pc.getCardNumber();  // 카드 카인드는 자식클래스에 있어서 호출 못함
         // 카드카인드 호출하려면 형변환해야함
         DeepPlayingCard dpc = (DeepPlayingCard) pc;
