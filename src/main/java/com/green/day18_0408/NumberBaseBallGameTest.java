@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class NumberBaseBallGameTest {
     public static void main(String[] args) {
-        NumberBaseBallGame game = new NumberBaseBallGame(3);
-        //game.showArr();
+        NumberBaseBallGame game = new NumberBaseBallGame(4);
+       // game.showArr();
         game.start();
     }
 }
@@ -45,41 +45,94 @@ class NumberBaseBallGame {
     public void showArr() {
         System.out.println(Arrays.toString(this.numArr));
     }
+    //--------------------------------------------------------------------------------------------
+    boolean contain(int[] numArr, int input) {
+        for (int num: numArr) {
+            if(num == input){
+                return true;
+            };
+        }
+        return false;
+    }
+    void startGame() {
+        System.out.println("게임을 시작합니다.");
+        Scanner sc = new Scanner(System.in);
+        while (true) {
+            int strike = 0;
+            int ball = 0;
+
+            System.out.print("숫자를 입력해주세요: >> ");
+            String input = sc.nextLine();
+            String[] strArr = input.split(" ");
+            int[] answerNumber = new int[strArr.length];
+
+            for (int i = 0; i< strArr.length; i++) {
+                int n = Integer.parseInt(strArr[i]);
+                answerNumber[i] = n;
+            }
+
+            for (int i = 0; i < numArr.length; i++) {
+                boolean equals = numArr[i] == answerNumber[i]; // 동일한 인덱스의 값 비교
+                if (equals) {
+                    strike++;
+                } else if (contain(numArr, answerNumber[i])) {    // numArr의 숫자에 input이 포함되는지 비교하는 메소드.
+                    ball++;
+                }
+            }
+            int out = numArr.length - (strike + ball);
+            System.out.printf("strike: %d ball: %d out: %d\n",strike,ball,out);
+
+            if(strike==numArr.length) {break;}
+
+        }
+        System.out.println("축하드립니다!! Strike 를 모두 맞히셨습니다!! 와~ ^_^~!");
+        System.out.println("종료!");
+        sc.close();
+    }
+    //--------------------------------------------------------------------------------------------
     void start() {
 
         Scanner scan = new Scanner(System.in);
         while (true) {
-            System.out.printf("%d자리 수 입력 >> ", NUMBER_COUNT);
-            int num = scan.nextInt();
-            int[] arr = new int[NUMBER_COUNT];
-            for (int i = arr.length - 1; i >= 0; i--) {
-                arr[i] = num % 10;
-                num /= 10;
+            System.out.printf("%d자리 수 입력 (구분은 스페이스바) >> ", NUMBER_COUNT);
+            String strAnswer = scan.nextLine();
+            String[] answerStrArr = strAnswer.split("");
+            int[] answerArr = new int[NUMBER_COUNT];
+            for (int i = 0; i < answerArr.length; i++) {
+                answerArr[i] = Integer.parseInt(answerStrArr[i]);
             }
-            int S = 0, B = 0, O = 0;
+            if (numArr.length != answerArr.length) {
+                System.out.println("잘못 입력하셨습니다.");
+                continue;
+            }
+//            System.out.printf("%d자리 수 입력 >> ", NUMBER_COUNT);
+//            int num = scan.nextInt();
+//            int[] answerArr = new int[NUMBER_COUNT];
+//            for (int i = answerArr.length - 1; i >= 0; i--) {
+//                answerArr[i] = num % 10;
+//                num /= 10;
+//            }
+            int S = 0, B = 0;
             for (int i = 0; i < NUMBER_COUNT; i++) {
-                if (arr[i] == numArr[i]) {
+                if (answerArr[i] == numArr[i]) {
                     S++;
+                }
+                for (int j = 0; j <NUMBER_COUNT; j++) {
+                    if(answerArr[i] == numArr[j]) {
+                        B++;
+                    }
                 }
             }
             if (S == NUMBER_COUNT) {
                 System.out.println("성공!");
                 break;
             }
-            for (int i = 0; i < NUMBER_COUNT; i++) {
-                for (int j = 0; j <NUMBER_COUNT; j++) {
-                    if(arr[i] == numArr[j]) {
-                        B++;
-                    }
-                }
-            }
             B -= S;
-            O = NUMBER_COUNT - B - S;
-            System.out.printf("Strike: %d, Ball: %d, Out: %d\n", S, B, O);
-//            System.out.printf("%d\t%d\t%d",S, B, O);
+            System.out.printf("Strike: %d, Ball: %d, Out: %d\n", S, B, NUMBER_COUNT - B - S);
+//            System.out.printf("%d\t%d\t%d",S, B, NUMBER_COUNT - B - S);
 //            break;
 
         }
-
+        scan.close();
     }
 }
