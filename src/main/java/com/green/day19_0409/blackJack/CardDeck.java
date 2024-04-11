@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CardDeck {
-    public static final String[] PATTERNS = {"Spare", "Heart", "Diamond", "Club"};
+    public static final String[] PATTERNS = {"Spade", "Heart", "Diamond", "Club"};
     public static final int CARD_COUNT = 13;
-    private List<Card> list;
+    private List<Card> list;        // 배열 대신 어레이리스트를 사용하여 카드 객체의 주소값을 담음
 
     public CardDeck() {
         list = new ArrayList();
@@ -38,10 +38,9 @@ public class CardDeck {
     }
     public Card draw() {
         int random = random(list.size());
-        Card c = list.remove(random);   // remove는 지우면서 리턴도 해줌
 //        Card c = list.get(random);
 //        list.remove(random);
-        return c;
+        return list.remove(random); // remove는 지우면서 뭘 지웠는지 리턴도 해줌
     }
     private int random(int num){
         return (int)(Math.random() * num);

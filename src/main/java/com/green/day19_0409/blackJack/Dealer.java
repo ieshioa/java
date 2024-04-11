@@ -6,13 +6,14 @@ public class Dealer extends Gamer {
     // 딜러가 가진 카드 수가 16 이하면 한장 더 가져가야함
     private static final int CAN_RECEIVE_POINT = 16;
     public boolean isMoreReceiveCard() {
-        int sum = 0;
-
-        for (int i = 0; i < cards.size(); i++) {
-            Card card = cards.get(i);
-            sum += card.getPoint();
-        }
-        return !(sum > CAN_RECEIVE_POINT);
+//        int sum = 0;
+//
+//        for (int i = 0; i < cards.size(); i++) {
+//            Card card = cards.get(i);
+//            sum += card.getPoint();
+//        }
+//        return !(sum > CAN_RECEIVE_POINT);
+        return !(this.scoreSum() > CAN_RECEIVE_POINT);
     }
     public void moreCard() {
         super.receiveCard(new Card("Club", "3"));

@@ -14,6 +14,15 @@ public class Gamer {
     public List<Card> openCards() {
         return cards;
     }
+    public int scoreSum(){
+        int sum = 0;
+
+        for (int i = 0; i < cards.size(); i++) {
+            Card card = cards.get(i);
+            sum += card.getPoint();
+        }
+        return sum;
+    }
 }
 
 class GamerTest {

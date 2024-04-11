@@ -3,6 +3,7 @@ package com.green.day19_0409.blackJack;
 public class Card {
     private String pattern;         // 무늬
     private String denomination;    // A, 2~10, J, Q, K
+    // 이뮤터블? 값을 수정할 수 없도록 하는것 (파이널)
 
     public Card(String pattern, String denomination) {
         this.pattern = pattern;
@@ -35,7 +36,7 @@ public class Card {
     }
 }
 
-class CardTest {
+class CardTest {        // 미션을 주려고 만든 거임. 지워도 상관없음.
     public static void main(String[] args) {
         Card c = new Card("Spade", "A");
 
